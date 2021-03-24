@@ -8,3 +8,8 @@ resource "null_resource" "helloWorld" {
     command = "echo ${random_pet.name.id}"
   }
 }
+
+resource "random_pet" "name2" {
+ length    = "39"
+ separator = "-"
+}
